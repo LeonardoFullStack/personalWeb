@@ -92,11 +92,13 @@ footer {
 }
 
 .mainInfo {
+  width: 75%;
+  margin: 10px auto 0 auto;
   max-height: 700px;
 }
 .mainInfo img {
-  width: 75%;
-  max-width: 500px;
+  width: 100%;
+  max-width: 100%;
   display: block;
   margin: 10px auto 0 auto;
   border-top-left-radius: 10px;
@@ -105,9 +107,8 @@ footer {
 
 .mainDescription {
   background-image: url("images/background-logo.png");
-  width: 75%;
-  max-width: 500px;
   margin: 0 auto;
+  width: 100%;
   padding: 20px;
   font-size: 20px;
   border-bottom-left-radius: 10px;
@@ -275,6 +276,9 @@ footer {
   .descriptionContent p {
     font-size: 25px;
   }
+  .mainInfo {
+    width: 79%;
+  }
 }
 @media screen and (min-width: 900px) {
   .descriptionContent p {
@@ -287,8 +291,247 @@ footer {
   }
 }
 @media screen and (min-width: 1200px) {
+  .mainInfo {
+    max-height: 493px;
+    background-color: #21212E;
+  }
+  .mainInfo img {
+    max-height: 392px;
+    max-width: 513px;
+  }
+  .titleDescription {
+    max-height: 700px;
+    max-width: none;
+    width: auto;
+    margin-right: 20px;
+  }
+  .descriptionContent {
+    max-height: 700px;
+    max-width: none;
+    width: auto;
+    margin-right: 20px;
+    height: 514px;
+  }
   .descriptionContent p {
-    font-size: 33px;
+    font-size: 42px;
+  }
+  .mainInfo {
+    margin-left: 11%;
+  }
+  .myDescription {
+    margin-right: 8%;
+  }
+}
+.projects {
+  text-align: center;
+}
+.projects h1 {
+  font-size: 45px;
+  margin-top: 30px;
+}
+.projects p {
+  margin: 30px;
+  font-size: 20px;
+}
+
+.projectSelect {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px;
+  gap: 5px;
+}
+.projectSelect button {
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: #21212E;
+  height: 40px;
+  cursor: pointer;
+}
+.projectSelect button:hover {
+  transform: scale(1.05);
+}
+
+.projectTitle {
+  width: 75%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 15px;
+  background-color: #21212E;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  width: 90%;
+}
+
+.projectDescription {
+  width: 75%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #21212E;
+  width: 90%;
+  text-align: center;
+}
+.projectDescription p {
+  margin: 20px;
+}
+.projectDescription ul {
+  list-style: none;
+}
+
+.projectSlider {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  width: 100%;
+}
+.projectSlider .simbol {
+  opacity: 0.8;
+  display: grid;
+  place-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: auto;
+}
+.projectSlider .simbol:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.projectSlider img {
+  width: 100%;
+}
+
+.singleProject {
+  margin-bottom: 200px;
+}
+.singleProject button {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  margin: 10px auto;
+  background-color: transparent;
+  color: #21212E;
+  height: 41px;
+  width: 220px;
+  border-radius: 5px;
+  border: 1px solid #21212E;
+}
+.singleProject button img {
+  max-width: 30px;
+  max-height: 30px;
+  margin-top: 3px;
+  background-color: transparent;
+  border-radius: 3px;
+}
+.singleProject button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.links span {
+  display: grid;
+  place-items: center;
+  margin-top: 6px;
+  font-size: 20px;
+}
+.links a {
+  text-decoration: none;
+}
+
+.usedTechs .usedTechsTitle {
+  width: 75%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 15px;
+  background-color: #21212E;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+.usedTechs .usedTechsContent {
+  width: 75%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #21212E;
+}
+
+@media screen and (min-width: 900px) {
+  .projectsSection {
+    grid-column: 1/3;
+  }
+  .projectTitle {
+    max-width: 1200px;
+  }
+  .projectDescription {
+    width: 90%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 600px 200px 200px;
+  }
+  .projectDescription p {
+    grid-row: 1/3;
+    font-size: 27px;
+    padding: 5px;
+  }
+  .usedTechs {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+  .projectSlider {
+    place-items: center;
+  }
+  .projectSlider img {
+    max-width: 400px;
+  }
+  .links {
+    grid-row: 3/4;
+    margin-top: 80px;
+  }
+  .webDescriptionTitle {
+    width: 75%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 15px;
+    background-color: #21212E;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    width: 90%;
+  }
+  .webDescriptionContent {
+    width: 75%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #21212E;
+    width: 90%;
   }
 }
 

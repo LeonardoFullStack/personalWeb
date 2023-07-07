@@ -98,9 +98,11 @@ footer {
 }
 
 .mainInfo {
+  width:75%;
+  margin:10px auto 0 auto;
   img {
-    width:75%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 100%;
     display: block;
     margin:10px auto 0 auto;
     border-top-left-radius: 10px;
@@ -111,9 +113,8 @@ footer {
 
 .mainDescription {
   background-image: url('images/background-logo.png');
-  width:75%;
-  max-width: 500px;
   margin:0 auto;
+  width:100%;
   padding:20px;
   font-size:20px;
   border-bottom-left-radius: 10px;
@@ -290,6 +291,10 @@ footer {
     }
   }
 
+  .mainInfo {
+    width:79%;
+  }
+
   
 }
 @media screen and (min-width: 900px) {
@@ -309,9 +314,40 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
-  .descriptionContent {
-    p {
-      font-size: 33px;
+
+  .mainInfo {
+    max-height:493px;
+    background-color: $violet;
+
+    img {
+      max-height: 392px;
+      max-width:513px;
     }
+  }
+  .titleDescription {
+    max-height: 700px;
+    max-width: none;
+    width: auto;
+    margin-right: 20px;
+  }
+
+
+  .descriptionContent {
+    max-height: 700px;
+    max-width: none;
+    width: auto;
+    margin-right: 20px;
+    height: 514px;
+    p {
+      font-size: 42px;
+    }
+  }
+
+  .mainInfo {
+    margin-left:11%;
+  }
+
+  .myDescription {
+    margin-right:8%;
   }
 }

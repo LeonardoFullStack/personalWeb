@@ -22,3 +22,10 @@
     margin-bottom: 15px;
     border:1px solid $violet;
 }
+
+@mixin button() {
+    background-color: transparent;
+    color:white;
+    border-radius: 5px;
+    border: 1px solid white;
+}
