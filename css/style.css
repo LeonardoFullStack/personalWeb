@@ -1,0 +1,295 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5F5F5;
+  min-height: 100vh;
+  font-family: "Quicksand", sans-serif;
+}
+
+footer {
+  position: fixed;
+  background-color: #21212E;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  /* Ajusta este valor según la altura deseada para el footer */
+}
+
+.mainHeader {
+  position: relative;
+  background-color: #21212E;
+  height: 55px;
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+}
+
+.burguer {
+  grid-column: 3/4;
+  display: grid;
+  place-items: center;
+}
+.burguer .burguerIcon {
+  color: #C7C9C7;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.displayNone {
+  display: none;
+}
+
+.burguerOpen {
+  display: grid;
+  position: absolute;
+  color: white;
+  background-color: white;
+  height: 0;
+  width: 200px;
+  border: 1px solid #21212E;
+  right: 0;
+  top: 46px;
+  overflow: hidden;
+  transition: 0.1s ease-in-out;
+  border-radius: 3px;
+  margin-right: 3px;
+  margin-top: 3px;
+}
+
+.navLink {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  border-bottom: 1px solid black;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  background-color: #21212E;
+  color: white;
+}
+
+.navLink2 {
+  width: 100%;
+  height: 24px;
+  margin-top: 5px;
+}
+
+.burguerOpen.active {
+  height: 400px;
+}
+
+.logoHeader {
+  grid-column: 1/2;
+}
+.logoHeader img {
+  width: 62px;
+}
+
+.mainInfo {
+  max-height: 700px;
+}
+.mainInfo img {
+  width: 75%;
+  max-width: 500px;
+  display: block;
+  margin: 10px auto 0 auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.mainDescription {
+  background-image: url("images/background-logo.png");
+  width: 75%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.mainDescription p {
+  color: #C7C9C7;
+}
+.mainDescription button {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  margin: 10px auto;
+  background-color: transparent;
+  color: white;
+  height: 41px;
+  width: 295px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.mainDescription button img {
+  max-width: 30px;
+  max-height: 30px;
+  margin-top: 3px;
+  background-color: transparent;
+  border-radius: 3px;
+}
+.mainDescription button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.mainDescription span {
+  margin: auto;
+  font-size: 30px;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+}
+.mainDescription a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Hereda el color del texto */
+}
+.mainDescription a:hover {
+  text-decoration: none; /* Elimina el subrayado en el estado :hover */
+}
+
+.titleDescription {
+  width: 75%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 15px;
+  background-color: #21212E;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  margin-top: 20px;
+}
+
+.descriptionContent {
+  width: 75%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #21212E;
+  font-size: 29px;
+}
+
+.badgesTitle {
+  width: 75%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 15px;
+  background-color: #21212E;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.badges {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 75%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  color: #21212E;
+  text-align: center;
+  margin-bottom: 85px;
+  border: 1px solid #21212E;
+}
+.badges .badgeImg {
+  width: 100%;
+  max-width: 500px;
+}
+.badges .badgeGridItem {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 63px;
+}
+
+@media screen and (min-width: 792px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .badgeSection {
+    grid-column: 1/3;
+  }
+  .badgesTitle {
+    margin-top: 10px;
+    max-width: none;
+    width: 89%;
+  }
+  .badges {
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 89%;
+    max-width: none;
+  }
+  .badges .badgeImg {
+    max-width: 100px;
+  }
+  .badges .badgeGridItem {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .burguer {
+    display: none;
+  }
+  .burguerOpen {
+    position: relative;
+    display: flex;
+    height: 40px;
+    top: 0;
+    width: 100%;
+    grid-column: 2/3;
+    margin: auto auto;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 10px;
+    background-color: #21212E;
+  }
+  .navLink {
+    color: white;
+    border: none;
+  }
+  .navLink:hover {
+    background-color: white;
+    border-radius: 3px;
+    color: #21212E;
+  }
+  .burguerOpen.active {
+    height: 40px;
+  }
+  .descriptionContent p {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .descriptionContent p {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .descriptionContent p {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .descriptionContent p {
+    font-size: 33px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
