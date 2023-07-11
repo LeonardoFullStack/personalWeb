@@ -36,7 +36,7 @@ export const Projects = () => {
     </button>
 
     <button onClick={()=>selected(4)}>
-      McMovies
+      Servicios
     </button>
 
     <button onClick={()=>selected(5)}>
