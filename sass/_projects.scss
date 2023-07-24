@@ -17,9 +17,9 @@
 .projectSelect {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 20px;
     gap:5px;
     margin:0 auto;
+    padding: 0 30px 0 30px ;
 
     button {
         @include button();

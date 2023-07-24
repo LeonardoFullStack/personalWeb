@@ -54,7 +54,7 @@ export const Project = ({index}) => {
             'Se trata de un carrito de la compra basado en los JSON de que tiene la api de prueba gratuita DUMMY JSON. Al pulsar el botón finalizar compra, lleva a una página donde se muestran los productos seleccionados en una tabla. También se pueden ver en un pop-up emergente al pulsar el icono del carrito. Mi intención a posteriori es añadir pagos por pay-pal para tener práctica con las herramientas de pago.'
         ],
         [
-            'Fué nuestro primer proyecto con React. Es una "to do list" con los datos almacenados en el local storage. Aquí aprendí a usar la metodología básica de React (hooks, etc.)'
+            'Fué nuestro primer proyecto con React. Es una "to do list" con los datos almacenados en el local storage. Aquí aprendí a usar la metodología básica de React (hooks, etc.). Para entrar el login es email: paco@gmail.com y la password es "123"'
         ]
     ]
     
@@ -127,11 +127,11 @@ export const Project = ({index}) => {
         ],
         [
             'https://github.com/LeonardoFullStack/API-REST',
-            'https://github.com/LeonardoFullStack/API-REST'
+            'https://mongo-services-5o67.onrender.com'
         ],
         [
             'https://github.com/LeonardoFullStack/carrito',
-            'https://carrito-de4s.onrender.com/compra.html'
+            'https://carrito-de4s.onrender.com'
         ],
         [
             'https://github.com/LeonardoFullStack/toDoTask',

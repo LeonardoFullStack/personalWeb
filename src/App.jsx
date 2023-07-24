@@ -29,7 +29,7 @@ function App() {
           
     >Proyectos
     </NavLink>
-    <NavLink to='/about' className='navLink'
+    <NavLink to='/contact' className='navLink'
           
     >Contacto
     </NavLink>
