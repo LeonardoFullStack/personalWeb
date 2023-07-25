@@ -98,53 +98,59 @@ footer {
 }
 
 .mainInfo {
+  display:grid;
+  grid-template-rows: repeat(2,1fr);
+  width:75%;
+  max-width:505px;
+  margin:10px auto 0 auto;
   img {
-    width:75%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 100%;
     display: block;
     margin:10px auto 0 auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
   max-height: 700px;
+/* 1D1D2A 343440 */
+  .mainDescription {
+    background-image: linear-gradient(to right, #1D1D2A, #343440);
+    background-color: blue;
+    margin:0 auto;
+    width:100%;
+    padding:20px;
+    font-size:20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+  
+  
+    p {
+      color:$grey
+    }
+  
+    button {
+      display:grid;
+      grid-template-columns: 40px 1fr;
+      margin:10px auto;
+      background-color: transparent;
+      color:white;
+      height:41px;
+      width:295px;
+      border-radius: 5px;
+      border: 1px solid white;
+  
+      img {
+        max-width: 30px;
+        max-height:30px;
+        margin-top: 3px;
+        background-color: transparent;
+        border-radius: 3px;
+      }
+    }
 }
 
-.mainDescription {
-  background-image: url('images/background-logo.png');
-  width:75%;
-  max-width: 500px;
-  margin:0 auto;
-  padding:20px;
-  font-size:20px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  margin-bottom: 15px;
-  text-align: center;
-
-
-  p {
-    color:$grey
-  }
-
-  button {
-    display:grid;
-    grid-template-columns: 40px 1fr;
-    margin:10px auto;
-    background-color: transparent;
-    color:white;
-    height:41px;
-    width:295px;
-    border-radius: 5px;
-    border: 1px solid white;
-
-    img {
-      max-width: 30px;
-      max-height:30px;
-      margin-top: 3px;
-      background-color: transparent;
-      border-radius: 3px;
-    }
-  }
 
   button:hover {
     transform: scale(1.1);
@@ -216,6 +222,7 @@ footer {
     margin-bottom:63px;
   }
 }
+
 
 @media screen and (min-width: 792px) {
 
@@ -290,6 +297,10 @@ footer {
     }
   }
 
+  .mainInfo {
+    width:79%;
+  }
+
   
 }
 @media screen and (min-width: 900px) {
@@ -309,9 +320,38 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
-  .descriptionContent {
-    p {
-      font-size: 33px;
+
+  .mainInfo {
+    max-height:493px;
+
+    img {
+      max-height: 392px;
     }
+  }
+  .titleDescription {
+    max-height: 700px;
+    max-width: none;
+    width: auto;
+    margin-right: 20px;
+  }
+
+
+  .descriptionContent {
+    max-height: 700px;
+    max-width: none;
+    width: auto;
+    margin-right: 20px;
+    height: 514px;
+    p {
+      font-size: 39px;
+    }
+  }
+
+  .mainInfo {
+    margin-left:11%;
+  }
+
+  .myDescription {
+    margin-right:8%;
   }
 }

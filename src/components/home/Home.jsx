@@ -74,9 +74,11 @@ export const Home = () => {
   return (
     <>
     <section className='mainInfo'>
-      <img src='images/devimg.png'/>
+      <div className='mainInfoImg'>
+       <img alt='logo de la empresa' src='images/devimg.png'/> 
+      </div>     
       <div className='mainDescription'>
-        <a href='www.goodfdfgle.es' target='blank'>
+        <a href='https://github.com/LeonardoFullStack' target='blank'>
           <button>
             <img src='images/githubicon.png'/>
             <span>

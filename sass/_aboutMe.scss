@@ -1,0 +1,94 @@
+@import 'mixings';
+@import 'variables';
+
+.aboutMeSection {
+    grid-column: 1 / 3;
+}
+
+.aboutMeHeader{
+    @include title();
+
+    h1 {
+        margin:5px;
+        margin-top:10px;
+    }
+}
+
+
+.titleBox {
+    @include titleBox();
+}
+
+.contentBox {
+    @include contentBox();
+    text-align: center;
+    display:block;
+    font-size:1.3rem;
+
+    img {
+        width:100%;
+        max-width:500px;
+        margin: 20px auto 0 auto;
+        
+    }
+
+
+    .projectDef {
+        padding-bottom: 20px;
+        border-bottom: 1px solid black;
+    }
+
+    margin-bottom: 27px;
+}
+
+.lastThings {
+    @include title();
+    text-align: center;
+    margin-bottom: 95px;
+}
+
+@media screen and (min-width: 790px) {
+    .titleBox {
+        width:75%;
+        max-width: 1500px;
+    }
+
+    .contentBox {
+        width:75%;
+        max-width: 1500px;
+        font-size: 1.5rem;
+        
+        p {
+            margin-bottom:30px;
+        }
+
+        img {
+            max-width: 600px;
+            margin: 0;
+        }
+    }
+
+    .projectDef, .projectDefLast {
+        display:grid;
+        grid-template-columns: 400px 1fr;
+        margin-top:20px;
+        place-items: center;
+
+        span {
+            margin-left:20px;
+        }
+    }
+
+    .pcFotos {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:20px;
+
+        img {
+            max-height: 450px;
+        }
+    }
+}
+
+
+
