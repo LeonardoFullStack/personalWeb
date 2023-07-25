@@ -75,7 +75,7 @@ export const Home = () => {
     <>
     <section className='mainInfo'>
       <div className='mainInfoImg'>
-       <img src='images/devimg.png'/> 
+       <img alt='logo de la empresa' src='images/devimg.png'/> 
       </div>     
       <div className='mainDescription'>
         <a href='https://github.com/LeonardoFullStack' target='blank'>

@@ -46,7 +46,7 @@ export const AboutMe = () => {
             </p>
 
             <div className='projectDef'>
-              <img src='images/resin/ajedrez.jpg' />
+              <img alt='ajedrez de resina' src='images/resin/ajedrez.jpg' />
               <span>
                 Este fué mi primer proyecto largo.Se trata de un juego de ajedrez de colores morado y mármol, donde tuve que rellenar cada molde por capas ( para crear el marmoleado del blanco y para la peana que es negra) y el tablero que tuve que crear cada cuadrado por separado, para luego ponerle un borde dorado.
               </span>
@@ -55,7 +55,7 @@ export const AboutMe = () => {
 
 
             <div className='projectDef'>
-              <img src='images/resin/mesabandera.jpg' />
+              <img alt='Mesa con bandera de vinilo' src='images/resin/mesabandera.jpg' />
               <span>
                 Aquí un ejemplo de como se puede poner cualquier imagen en vinilo, y al cubrir con resina transparente podemos plasmar una foto en cualquier superfície, sin preocuparnos de que el vinilo se despegue.          </span>
             </div>
@@ -63,7 +63,7 @@ export const AboutMe = () => {
 
 
             <div className='projectDef'>
-              <img src='images/resin/mueblepc.png' />
+              <img alt='Mueble violeta y negro' src='images/resin/mueblepc.png' />
               <span>
                 Éste ha sido mi proyecto mas largo hasta ahora, también mi primer mueble. Se trata de una cajonera hecha con fibrapan, con todos los lados cubiertos de resina logrando un efecto de pintura vertida.
               </span>
@@ -72,7 +72,7 @@ export const AboutMe = () => {
 
 
             <div className='projectDefLast'>
-              <img src='images/resin/mesazalo.jpg' />
+              <img alt='Mesa granito azul' src='images/resin/mesazalo.jpg' />
               <span>
                 Y aquí mi proyecto mejor acabado. Se trata de una restauración de un mueble de recibidor, el cual pinté de negro, puse una plancha de madera encima y la cubrí de resina logrando un efecto de "granito azul"            </span>
             </div>
@@ -99,12 +99,12 @@ export const AboutMe = () => {
             </p>
 
             <div className='pcFotos'>
-              <img src='images/pc/componentes.jpg' />
-              <img src='images/pc/grafica.jpg' />
-              <img src='images/pc/pc1.jpg' />
-              <img src='images/pc/pc2.jpg' />
-              <img src='images/pc/pc3.jpg' />
-              <img src='images/pc/pc4.jpg' />
+              <img alt='Componentes del pc por separado' src='images/pc/componentes.jpg' />
+              <img alt='tarjeta gráfica abierta' src='images/pc/grafica.jpg' />
+              <img alt='pc en construcción' src='images/pc/pc1.jpg' />
+              <img alt='pc en construcción' src='images/pc/pc2.jpg' />
+              <img alt='pc en construcción' src='images/pc/pc3.jpg' />
+              <img alt='pc en construcción' src='images/pc/pc4.jpg' />
             </div>
 
           </div>

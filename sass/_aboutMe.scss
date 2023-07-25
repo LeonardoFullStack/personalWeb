@@ -22,10 +22,12 @@
 .contentBox {
     @include contentBox();
     text-align: center;
+    display:block;
+    font-size:1.3rem;
 
     img {
         width:100%;
-        max-width:300px;
+        max-width:500px;
         margin: 20px auto 0 auto;
         
     }
