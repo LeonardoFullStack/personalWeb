@@ -95,7 +95,7 @@ export const Home = () => {
             </span>
           </button>
         </a>
-        <a href='/contact' target='blank'>
+        <a href='/contact'>
           <button>
             <img src='images/mailicon.png'/>
             <span>
