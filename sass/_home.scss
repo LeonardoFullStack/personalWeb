@@ -29,6 +29,20 @@ footer {
   height: 55px;
   display: grid;
   grid-template-columns: 100px 1fr 100px;
+
+  .navLink {
+    width:100%;
+    display:grid;
+    place-items: center;
+    border-bottom:1px solid black;
+    font-size:30px;
+    text-decoration: none;
+  }
+
+  .navLink:hover {
+    background-color: $violet;
+    color:white;
+  }
 }
 
 .burguer {
@@ -64,20 +78,10 @@ footer {
   margin-top: 3px;
 }
 
-.navLink {
-  width:100%;
-  display:grid;
-  place-items: center;
-  border-bottom:1px solid black;
-  font-size:30px;
-  text-decoration: none;
-}
 
 
-.navLink:hover {
-  background-color: $violet;
-  color:white;
-}
+
+
 
 .navLink2 {
   width:100%;
@@ -289,17 +293,21 @@ footer {
     display:none;
   }
 
-  .navLink {
-    color:white;
-    border:none;
+  .mainHeader {
+    .navLink {
+      color:white;
+      border:none;
+    }
+  
+    .navLink:hover {
+      background-color: white;
+      border-radius: 3px;
+      color:$violet;
+    }
+  
   }
 
-  .navLink:hover {
-    background-color: white;
-    border-radius: 3px;
-    color:$violet;
-  }
-
+  
   .burguerOpen.activo {
     height: 40px;
   }
@@ -312,6 +320,7 @@ footer {
 
   .mainInfo {
     width:79%;
+    max-height: 500px;
   }
 
   
@@ -321,6 +330,10 @@ footer {
     p {
       font-size: 28px;
     }
+  }
+
+  .mainInfo {
+    max-height: 600px;
   }
 }
 

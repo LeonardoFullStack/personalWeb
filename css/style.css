@@ -27,6 +27,18 @@ footer {
   display: grid;
   grid-template-columns: 100px 1fr 100px;
 }
+.mainHeader .navLink {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  border-bottom: 1px solid black;
+  font-size: 30px;
+  text-decoration: none;
+}
+.mainHeader .navLink:hover {
+  background-color: #21212E;
+  color: white;
+}
 
 .burguer {
   grid-column: 3/4;
@@ -58,20 +70,6 @@ footer {
   border-radius: 3px;
   margin-right: 3px;
   margin-top: 3px;
-}
-
-.navLink {
-  width: 100%;
-  display: grid;
-  place-items: center;
-  border-bottom: 1px solid black;
-  font-size: 30px;
-  text-decoration: none;
-}
-
-.navLink:hover {
-  background-color: #21212E;
-  color: white;
 }
 
 .navLink2 {
@@ -275,11 +273,11 @@ footer {
   .activo {
     display: none;
   }
-  .navLink {
+  .mainHeader .navLink {
     color: white;
     border: none;
   }
-  .navLink:hover {
+  .mainHeader .navLink:hover {
     background-color: white;
     border-radius: 3px;
     color: #21212E;
@@ -292,11 +290,15 @@ footer {
   }
   .mainInfo {
     width: 79%;
+    max-height: 500px;
   }
 }
 @media screen and (min-width: 900px) {
   .descriptionContent p {
     font-size: 28px;
+  }
+  .mainInfo {
+    max-height: 600px;
   }
 }
 @media screen and (min-width: 1050px) {
