@@ -1,5 +1,6 @@
 import React from 'react'
 import { Badges } from '../Badges'
+import { NavLink } from 'react-router-dom'
 
 export const Home = () => {
 
@@ -95,14 +96,18 @@ export const Home = () => {
             </span>
           </button>
         </a>
-        <a href='/contact'>
-          <button>
-            <img src='images/mailicon.png'/>
-            <span>
-              Contacto
-            </span>
-          </button>
-        </a>
+        <NavLink to='/contact' className='navLink'
+          
+        >
+        <button>
+        <img src='images/mailicon.png'/>
+        <span>
+          Contacto
+        </span>
+      </button>
+        </NavLink>
+          
+        
       </div>
     </section>
     <section className='myDescription'>
