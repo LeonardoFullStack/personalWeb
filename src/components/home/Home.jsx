@@ -95,7 +95,7 @@ export const Home = () => {
             </span>
           </button>
         </a>
-        <a href='www.goodfdfgle.es' target='blank'>
+        <a href='/contact' target='blank'>
           <button>
             <img src='images/mailicon.png'/>
             <span>
