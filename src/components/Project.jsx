@@ -115,7 +115,7 @@ export const Project = ({index}) => {
     const links = [
         [
             'https://github.com/LeonardoFullStack/sportPress-Front',
-            'https://earnest-swan-354ba3.netlify.app/'
+            'https://sportpress.netlify.app/'
         ],
         [
             'https://github.com/LeonardoFullStack/MONGO-BLOG',
