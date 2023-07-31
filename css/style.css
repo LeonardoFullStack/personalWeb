@@ -469,7 +469,25 @@ footer {
   display: none;
 }
 
+.descriptionButtons {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+.descriptionButtons img {
+  max-width: 50px;
+}
+
+.descriptionButtons:hover {
+  transform: scale(1.1);
+}
+
 @media screen and (min-width: 900px) {
+  .descriptionButtons {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+  }
   .projectsSection {
     grid-column: 1/3;
   }
@@ -506,6 +524,7 @@ footer {
   }
   .links {
     grid-row: 3/4;
+    width: 100%;
   }
   .webDescription {
     grid-column: 2/3;

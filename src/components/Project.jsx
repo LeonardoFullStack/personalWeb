@@ -229,22 +229,20 @@ export const Project = ({index}) => {
         </div>
 
         <div className='links'>
-        <a target='blank' href={links[index][0]}>
-                <button>
+        <a className='descriptionButtons' target='blank' href={links[index][0]}>
+                
                 <img src='images/githubicon.png'/>
                 <span>
                     Repositorio
                 </span>
-                </button>
+                
             </a>
 
-            <a target='blank' href={links[index][1]}>
-                <button>
+            <a className='descriptionButtons' target='blank' href={links[index][1]}>
                 <img src='images/despliegue.png'/>
                 <span>
                     Despliegue
                 </span>
-                </button>
             </a>
         </div>
 
