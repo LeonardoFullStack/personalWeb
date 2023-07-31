@@ -76,35 +76,32 @@ export const Home = () => {
     <>
     <section className='mainInfo'>
       <div className='mainInfoImg'>
-       <img alt='logo de la empresa' src='images/devimg.png'/> 
+       <img className='companyLogoName' alt='logo de la empresa' src='images/devimg.png'/> 
       </div>     
       <div className='mainDescription'>
-        <a href='https://github.com/LeonardoFullStack' target='blank'>
-          <button>
+        <a className='anchorButtons' href='https://github.com/LeonardoFullStack' target='blank'>
+          
             <img src='images/githubicon.png'/>
             <span>
               Portfolio
             </span>
-          </button>
         </a>
 
-        <a href='https://www.linkedin.com/in/leonardo-esteve-perales-b0845827a/' target='blank'>
-          <button>
+        <a className='anchorButtons' href='https://www.linkedin.com/in/leonardo-esteve-perales-b0845827a/' target='blank'>
+          
             <img src='images/linkedinlogo.jpg'/>
             <span>
               Linkedin
             </span>
-          </button>
         </a>
-        <NavLink to='/contact' className='navLink'
+        <NavLink to='/contact' className='navLink anchorButtons'
           
         >
-        <button>
+        
         <img src='images/mailicon.png'/>
         <span>
           Contacto
         </span>
-      </button>
         </NavLink>
           
         

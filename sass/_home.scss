@@ -103,78 +103,49 @@ footer {
 
 .mainInfo {
   display:grid;
-  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: 1fr;
+  gap:0px;
   width:75%;
-  max-width:505px;
-  margin:10px auto 0 auto;
-  img {
-    width: 100%;
-    max-width: 100%;
-    display: block;
-    margin:10px auto 0 auto;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  max-width:500px;
+  border:1px solid black;
+  margin:0 auto;
+  margin-top:20px;
+  border-radius:10px;
+
+  .mainInfoImg {
+    margin-bottom:-4px;
+    border-radius: 10px 10px 0 0;
   }
-  max-height: 700px;
-/* 1D1D2A 343440 */
+
+  .anchorButtons {
+    display:grid;
+    grid-template-columns: 50px 1fr;
+/*     background-color: red; */
+    width:80%;
+    margin:10px auto;
+    border-radius:5px;
+    place-items: center;
+    color:white;
+    border:1px solid white;
+  }
+
+  .anchorButtons:hover {
+    transform: scale(1.2);
+  }
+  
+
   .mainDescription {
-    background-image: linear-gradient(to right, #1D1D2A, #343440);
-    background-color: blue;
-    margin:0 auto;
-    width:100%;
-    padding:20px;
-    font-size:20px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    margin-bottom: 15px;
-    text-align: center;
-  
-  
-    p {
-      color:$grey
-    }
-  
-    button {
-      display:grid;
-      grid-template-columns: 40px 1fr;
-      margin:10px auto;
-      background-color: transparent;
-      color:white;
-      height:41px;
-      width:295px;
-      border-radius: 5px;
-      border: 1px solid white;
-  
-      img {
-        max-width: 30px;
-        max-height:30px;
-        margin-top: 3px;
-        background-color: transparent;
-        border-radius: 3px;
-      }
-    }
-}
-
-
-  button:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+    background-color: rgb(46,46,58);
+    margin-top: 0;
+    border-radius:0 0 10px 10px;
   }
 
-  span {
-    margin:auto;
-    font-size: 30px;
-    font-family: 'Quicksand', sans-serif;
-    text-decoration: none
+  .companyLogoName {
+    width: 100%;
   }
-
-  a {
-    text-decoration: none; /* Elimina el subrayado */
-    color: inherit; /* Hereda el color del texto */
-  }
-  
-  a:hover {
-    text-decoration: none; /* Elimina el subrayado en el estado :hover */
+  img {
+    width:50px;
+    border-radius: 10px 10px 0 0;
   }
 }
 
@@ -204,7 +175,7 @@ footer {
 
 .badges {
   display:grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   width:75%;
   max-width: 500px;
   margin:0 auto;
@@ -233,6 +204,7 @@ footer {
 
 
 @media screen and (min-width: 792px) {
+
 
   main {
     display:grid;
@@ -320,7 +292,10 @@ footer {
 
   .mainInfo {
     width:79%;
-    max-height: 500px;
+
+    .mainDescription {
+      margin-top:-98px;
+    }
   }
 
   
@@ -332,9 +307,7 @@ footer {
     }
   }
 
-  .mainInfo {
-    max-height: 600px;
-  }
+  
 }
 
 @media screen and (min-width: 1050px) {
@@ -348,7 +321,7 @@ footer {
 @media screen and (min-width: 1200px) {
 
   .mainInfo {
-    max-height:493px;
+    
 
     img {
       max-height: 392px;
@@ -375,6 +348,10 @@ footer {
 
   .mainInfo {
     margin-left:11%;
+
+    .mainDescription {
+      padding-top:10px;
+    }
   }
 
   .myDescription {
