@@ -19,6 +19,7 @@ export const Projects = () => {
     <p>
       Aquí muestro los distintos proyectos que he realizado a través del bootcamp en The Bridge. 
       Podrán ver las tecnologías utilizadas, definición/utilidad del proyecto y algunas capturas de pantalla.
+      Hay que tener en cuenta que los back-ends y algunos fronts están subidos en render.com, que es una plataforma que puede tardar hasta 3 minutos en cargar si la web no se ha visitado recientemente.Disculpad!
     </p>
     {/* carrito de la compra, to do's, mcmovies, huella del agua, sportpress, twitzerg */}
     <div className='projectSelect'>
@@ -28,7 +29,7 @@ export const Projects = () => {
     </button>
 
     <button onClick={()=>selected(2)}>
-      Blog
+      Tweethelp
     </button>
 
     <button onClick={()=>selected(3)}>

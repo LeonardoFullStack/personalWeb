@@ -11,9 +11,9 @@ export const Project = ({index}) => {
             'imps/sportpress3.png',
         ],
         [
-            'imps/twitzerg1.png',
-            'imps/twitzerg2.png',
-            'imps/twitzerg3.png',
+            'imps/tweethelp1.png',
+            'imps/tweethelp2.png',
+            'imps/tweethelp3.png',
         ],
         [
             'imps/blue1.png',
@@ -42,7 +42,7 @@ export const Project = ({index}) => {
             'Esto es el proyecto personal final de el bootcamp. Se trata de una página de noticias deportivas que tiene un funcionamiento basado en los roles de los usuarios. Los colaboradores pueden proponer noticias, el editor escoge y las publica, el usuario corriente únicamente puede comentar las noticias publicadas, y el moderador puede eliminar comentarios y banear usuarios para que no puedan comentar más.  Para terminar, el administrador gestiona los roles, ascendiendo o degradando según le convenga.'
         ],
         [
-            'Es un blog corriente, donde hay un login que es requerido para poder publicar y editar noticias (solo las suyas). Los usuarios no registrados pueden acceder a las noticias, pero no pueden publicar. Existe también un administrador, que puede eliminar y editar noticias aunque no sean suyas. Utiliza multer para poder subir imágenes, y la idea a posteriori es poder añadir comentarios y tags, para parecerse un poco a Twitter.'
+            'TweetHelp, es una pequeña red social de mensajes cortos con imágenes al estilo de X. Cada usuario puede publicar entradas, con imágen o sin imágen, tienen perfil público y pueden seguir a otros usuarios para tener un feed personalizado.Es un proyecto puramente de Node, utilizando plantillas EJS para el front y una base de datos SQL en el back.Es un proyecto conjunto con @Lauradev , dónde ella se ha encargado de toda la parte del diseño y del enfoque de usuario. '
         ],
         [
             'Un proyecto en grupo con la gente de UX/UI, Data Science y Ciberseguridad de la escuela The Bridge. Trata de un proyecto para concienciar sobre el gasto de el agua, calculando tu huella hídrica con un questionario. Con este proyecto aprendí a trabajar de una manera "profesional" con un gestionamiento del trabajo de tipo SCRUM y realizando las respectivas reuniones con las diferentes verticales para llegar a un producto final. Al realizar el questionario, se proponen unos retos de reducción de consumo en base a las respuestas del questionario.'
@@ -118,8 +118,8 @@ export const Project = ({index}) => {
             'https://sportpress.netlify.app/'
         ],
         [
-            'https://github.com/LeonardoFullStack/MONGO-BLOG',
-            'https://front-blog.onrender.com/'
+            'https://github.com/Leonardo-Full-Stack/MINITWITTER',
+            'https://minitwitter-x2oo.onrender.com/'
         ],
         [
             'https://github.com/DREWiex/huelladelagua-front',
@@ -144,7 +144,7 @@ export const Project = ({index}) => {
 
     const titles = [
         'SportPress',
-        'Blog',
+        'TweetHelp',
         'Huella del agua',
         'Servicios',
         'Carrito',
