@@ -19,7 +19,7 @@ export const Projects = () => {
     <p>
       Aquí muestro los distintos proyectos que he realizado a través del bootcamp en The Bridge. 
       Podrán ver las tecnologías utilizadas, definición/utilidad del proyecto y algunas capturas de pantalla.
-      Hay que tener en cuenta que los back-ends y algunos fronts están subidos en render.com, que es una plataforma que puede tardar hasta 3 minutos en cargar si la web no se ha visitado recientemente.Disculpad!
+      Hay que tener en cuenta que los back-ends y algunos fronts están subidos en render.com, que es una plataforma que puede tardar hasta 3 minutos en cargar si la web no se ha visitado recientemente, además de algún que otro error de carga sin solución por mi parte...Pero en máximo 3-5 minutos todos funcionan perfectamente!Disculpad!
     </p>
     {/* carrito de la compra, to do's, mcmovies, huella del agua, sportpress, twitzerg */}
     <div className='projectSelect'>
