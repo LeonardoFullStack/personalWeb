@@ -14,34 +14,34 @@ body {
 
 
 footer {
-  position:fixed;
+  position: fixed;
   background-color: $violet;
   padding: 10px;
-  bottom:0;
+  bottom: 0;
   width: 100%;
   height: 50px;
   /* Ajusta este valor según la altura deseada para el footer */
 }
 
 .mainHeader {
-  position:relative;
+  position: relative;
   background-color: $violet;
   height: 55px;
   display: grid;
   grid-template-columns: 100px 1fr 100px;
 
   .navLink {
-    width:100%;
-    display:grid;
+    width: 100%;
+    display: grid;
     place-items: center;
-    border-bottom:1px solid black;
-    font-size:30px;
+    border-bottom: 1px solid black;
+    font-size: 30px;
     text-decoration: none;
   }
 
   .navLink:hover {
     background-color: $violet;
-    color:white;
+    color: white;
   }
 }
 
@@ -70,11 +70,11 @@ footer {
   width: 200px;
   border: 1px solid $violet;
   right: 0;
-  top:46px;
+  top: 46px;
   overflow: hidden;
   transition: 0.1s ease-in-out;
   border-radius: 3px;
-  margin-right:3px;
+  margin-right: 3px;
   margin-top: 3px;
 }
 
@@ -84,9 +84,9 @@ footer {
 
 
 .navLink2 {
-  width:100%;
-  height:24px;
-  margin-top:5px;
+  width: 100%;
+  height: 24px;
+  margin-top: 5px;
 }
 
 .burguerOpen.activo {
@@ -95,96 +95,103 @@ footer {
 
 .logoHeader {
   grid-column: 1 / 2;
-  
+
   img {
     width: 62px;
   }
 }
 
 .mainInfo {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr;
-  gap:0px;
-  width:75%;
-  max-width:500px;
-  border:1px solid black;
-  margin:0 auto;
-  margin-top:20px;
-  border-radius:10px;
+  gap: 0px;
+  width: 75%;
+  max-width: 500px;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 10px;
 
   .mainInfoImg {
-    margin-bottom:-4px;
+    margin-bottom: -4px;
     border-radius: 10px 10px 0 0;
   }
 
   .anchorButtons {
-    display:grid;
+    display: grid;
     grid-template-columns: 50px 1fr;
-/*     background-color: red; */
-    width:80%;
-    margin:10px auto;
-    border-radius:5px;
+    /*     background-color: red; */
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 5px;
     place-items: center;
-    color:white;
-    border:1px solid white;
+    color: white;
+    border: 1px solid white;
   }
 
   .anchorButtons:hover {
     transform: scale(1.2);
   }
-  
+
 
   .mainDescription {
-    background-color: rgb(46,46,58);
+    background-color: rgb(46, 46, 58);
     margin-top: 0;
-    border-radius:0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
   }
 
   .companyLogoName {
     width: 100%;
   }
+
   img {
-    width:50px;
+    width: 50px;
     border-radius: 10px 10px 0 0;
   }
 }
 
 .titleDescription {
-  @include titleBox();
-  margin-top:20px;
-  
+
+  margin-top: 20px;
+
 }
 
 .descriptionContent {
-  @include contentBox();
-  font-size:29px;
+  width: 89%;
+  margin: 0 auto;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid $violet;
+  font-size: 29px;
 }
 
 .badgesTitle {
-  width:75%;
+  width: 75%;
   max-width: 500px;
-  margin:0 auto;
-  padding:20px;
-  font-size:15px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 15px;
   background-color: $violet;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color:white;
+  color: white;
   text-align: center;
 }
 
 .badges {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr;
-  width:75%;
+  width: 75%;
   max-width: 500px;
-  margin:0 auto;
-  padding:20px;
+  margin: 0 auto;
+  padding: 20px;
   background-color: white;
-  color:$violet;
+  color: $violet;
   text-align: center;
   margin-bottom: 85px;
-  border:1px solid $violet;
+  border: 1px solid $violet;
 
   .badgeImg {
     width: 100%;
@@ -192,114 +199,19 @@ footer {
   }
 
   .badgeGridItem {
-    font-size:30px;
+    font-size: 30px;
     font-weight: bolder;
-    margin-bottom:63px;
+    margin-bottom: 63px;
   }
 }
 
 .hidden {
-  display:none;
+  display: none;
 }
 
-
-@media screen and (min-width: 792px) {
-
-
-  main {
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .hidden {
-    display:block;
-  }
+.topSection {}
 
 
-  .badgeSection {
-    grid-column: 1 / 3;
-  }
-
-  .badgesTitle {
-    margin-top:10px;
-    max-width: none;
-    width: 89%;
-  }
-
-  .badges {
-    grid-template-columns: repeat(4, 1fr);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    width:89%;
-    max-width: none;
-    .badgeImg {
-      max-width: 100px;
-    }
-
-    .badgeGridItem {
-      font-size:15px;
-      margin-bottom:10px;
-    }
-  }
-
-
- .burguer {
-    display: none;
-  }
-
-  .burguerOpen {
-    position:relative;
-    display:flex;
-    height: 40px;
-    top:0;
-    width: 100%;
-    grid-column: 2 / 3;
-    margin: auto auto;
-    border-radius: 5px;
-    text-align: center;
-    font-size:10px;
-    background-color: $violet;
-  }
-
-  .activo {
-    display:none;
-  }
-
-  .mainHeader {
-    .navLink {
-      color:white;
-      border:none;
-    }
-  
-    .navLink:hover {
-      background-color: white;
-      border-radius: 3px;
-      color:$violet;
-    }
-  
-  }
-
-  
-  .burguerOpen.activo {
-    height: 40px;
-  }
-
-  .descriptionContent {
-    p {
-      font-size: 25px;
-    }
-  }
-
-  .mainInfo {
-    width:79%;
-
-    .mainDescription {
-      margin-top:-98px;
-    }
-  }
-
-  
-}
 @media screen and (min-width: 900px) {
   .descriptionContent {
     p {
@@ -307,7 +219,7 @@ footer {
     }
   }
 
-  
+
 }
 
 @media screen and (min-width: 1050px) {
@@ -321,12 +233,13 @@ footer {
 @media screen and (min-width: 1200px) {
 
   .mainInfo {
-    
+
 
     img {
       max-height: 392px;
     }
   }
+
   .titleDescription {
     max-height: 700px;
     max-width: none;
@@ -337,24 +250,100 @@ footer {
 
   .descriptionContent {
     max-height: 700px;
-    max-width: none;
     width: auto;
     margin-right: 20px;
     height: 514px;
+
     p {
       font-size: 39px;
     }
   }
 
   .mainInfo {
-    margin-left:11%;
+    margin-left: 11%;
 
     .mainDescription {
-      padding-top:10px;
+      padding-top: 10px;
     }
   }
 
   .myDescription {
-    margin-right:8%;
+    margin-right: 8%;
   }
+}
+
+.homeTop {
+  width: 75%;
+  margin: 15px auto 15px auto;
+
+  .title {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 15px;
+    background-color: $violet;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    text-align: center;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    color: $violet;
+    margin-bottom: 85px;
+    border: 1px solid $violet;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+.linkArticle {
+  background-color: transparent;
+}
+
+.cvArticle {
+  img {
+    width:100%;
+    border-radius: 5px;
+  }
+}
+
+.description {
+  p {
+    font-size: 1.2rem;
+    margin-bottom:5px;
+  }
+}
+
+.linkContainer {
+  display:grid;
+  grid-template-columns: 20% 1fr;
+  border-radius: 10px;
+  place-items:center;
+  cursor: pointer;
+  margin-bottom:10px;
+
+
+  img {
+    max-width:100%;
+    padding:5px;
+  }
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.linkContainer:hover {
+  background-color: $violet;
+  color:white;
+}
+
+.bolder {
+  font-weight: bolder;
 }

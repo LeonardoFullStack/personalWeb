@@ -132,23 +132,11 @@ footer {
 }
 
 .titleDescription {
-  width: 75%;
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  font-size: 15px;
-  background-color: #21212E;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  color: white;
-  text-align: center;
-  margin-top: 10px;
   margin-top: 20px;
 }
 
 .descriptionContent {
-  width: 75%;
-  max-width: 500px;
+  width: 89%;
   margin: 0 auto;
   padding: 20px;
   border-bottom-left-radius: 10px;
@@ -198,77 +186,6 @@ footer {
   display: none;
 }
 
-@media screen and (min-width: 792px) {
-  main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .hidden {
-    display: block;
-  }
-  .badgeSection {
-    grid-column: 1/3;
-  }
-  .badgesTitle {
-    margin-top: 10px;
-    max-width: none;
-    width: 89%;
-  }
-  .badges {
-    grid-template-columns: repeat(4, 1fr);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    width: 89%;
-    max-width: none;
-  }
-  .badges .badgeImg {
-    max-width: 100px;
-  }
-  .badges .badgeGridItem {
-    font-size: 15px;
-    margin-bottom: 10px;
-  }
-  .burguer {
-    display: none;
-  }
-  .burguerOpen {
-    position: relative;
-    display: flex;
-    height: 40px;
-    top: 0;
-    width: 100%;
-    grid-column: 2/3;
-    margin: auto auto;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 10px;
-    background-color: #21212E;
-  }
-  .activo {
-    display: none;
-  }
-  .mainHeader .navLink {
-    color: white;
-    border: none;
-  }
-  .mainHeader .navLink:hover {
-    background-color: white;
-    border-radius: 3px;
-    color: #21212E;
-  }
-  .burguerOpen.activo {
-    height: 40px;
-  }
-  .descriptionContent p {
-    font-size: 25px;
-  }
-  .mainInfo {
-    width: 79%;
-  }
-  .mainInfo .mainDescription {
-    margin-top: -98px;
-  }
-}
 @media screen and (min-width: 900px) {
   .descriptionContent p {
     font-size: 28px;
@@ -291,7 +208,6 @@ footer {
   }
   .descriptionContent {
     max-height: 700px;
-    max-width: none;
     width: auto;
     margin-right: 20px;
     height: 514px;
@@ -309,6 +225,74 @@ footer {
     margin-right: 8%;
   }
 }
+.homeTop {
+  width: 75%;
+  margin: 15px auto 15px auto;
+}
+.homeTop .title {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 15px;
+  background-color: #21212E;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  text-align: center;
+}
+.homeTop .content {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  color: #21212E;
+  margin-bottom: 85px;
+  border: 1px solid #21212E;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.linkArticle {
+  background-color: transparent;
+}
+
+.cvArticle img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.description p {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.linkContainer {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  border-radius: 10px;
+  place-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.linkContainer img {
+  max-width: 100%;
+  padding: 5px;
+}
+
+.linkContainer:hover {
+  background-color: #21212E;
+  color: white;
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
 .projects {
   text-align: center;
 }
@@ -741,6 +725,120 @@ footer {
   }
   .contactSection p {
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 792px) {
+  .myDescription {
+    grid-column: 1/3;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .topSection {
+    height: 770px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hidden {
+    display: block;
+  }
+  .badgeSection {
+    grid-column: 1/3;
+  }
+  .badgesTitle {
+    margin-top: 10px;
+    max-width: none;
+    width: 89%;
+  }
+  .badges {
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 89%;
+    max-width: none;
+  }
+  .badges .badgeImg {
+    max-width: 100px;
+  }
+  .badges .badgeGridItem {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .burguer {
+    display: none;
+  }
+  .burguerOpen {
+    position: relative;
+    display: flex;
+    height: 40px;
+    top: 0;
+    width: 100%;
+    grid-column: 2/3;
+    margin: auto auto;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 10px;
+    background-color: #21212E;
+  }
+  .activo {
+    display: none;
+  }
+  .mainHeader .navLink {
+    color: white;
+    border: none;
+  }
+  .mainHeader .navLink:hover {
+    background-color: white;
+    border-radius: 3px;
+    color: #21212E;
+  }
+  .burguerOpen.activo {
+    height: 40px;
+  }
+  .descriptionContent p {
+    font-size: 25px;
+    color: black;
+  }
+  .mainInfo {
+    width: 300;
+    height: 460px;
+    max-height: 460px;
+    max-width: 236px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: blue;
+  }
+  .titleDescription {
+    width: 89%;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 15px;
+    background-color: #21212E;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    text-align: center;
+  }
+  .homeTop {
+    width: 89%;
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 980px) {
+  .homeTop {
+    width: 89%;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
   }
 }
 
